@@ -5,8 +5,4 @@ from_file, to_file = ARGV
 #remember to thank google
 in_file = File.read(from_file)
 
-out_file = open(to_file, 'w')
-out_file.write(in_file)
-
-
-out_file.close
+out_file = File.write(to_file, in_file)
